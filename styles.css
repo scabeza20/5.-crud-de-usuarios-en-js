@@ -10,7 +10,15 @@ body{
    
 }
 
-input, label{
+input, label, select{
     display: block;
+    margin-bottom: 10px;
+}
+button{
+    padding: 8px;
+    background-color: light-dark(#242424, #f9f9f9);
+    color: light-dark(#f9f9f9, #242424);
+    border: none;
+    cursor: pointer;
     margin-bottom: 10px;
 }
