@@ -4,7 +4,8 @@ function main() {
     let userTable = document.getElementById("user-table-body");
 
 
-    function createUsers() {
+    function createUsers(event) {
+        event.preventDefault();
         let userName = document.getElementById("userName").value;
         let email = document.getElementById("email").value;
         let age = document.getElementById("age").value;
@@ -12,7 +13,7 @@ function main() {
         userTable.innerText =`${userName} y status ${status}`;
     }
 
-    userForm.addEventListener('submit', ()=> createUsers());
+    userForm.addEventListener('submit', createUsers);
 
 }
 
