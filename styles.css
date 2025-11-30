@@ -15,19 +15,19 @@ input, label, select{
     margin-bottom: 10px;
 }
 button{
-    padding: 8px;
+    padding: 5px;
     background-color: light-dark(#242424, #f9f9f9);
     color: light-dark(#f9f9f9, #242424);
-    border: none;
+    margin-bottom: 10px;
     cursor: pointer;
     margin-bottom: 10px;
 }
 
-table{
-   
-} 
-
-th,td{
+th, td{
     border: 1px solid gray;
-   padding: 5px;
+   padding: 5px 5px 0px 5px;
+   
 }
+
+
+

@@ -4,16 +4,17 @@ function main() {
     let userTable = document.getElementById("user-table-body");
 
 
-    function createUsers(event) {
+    function createUser(event) {
         event.preventDefault();
         let userName = document.getElementById("userName").value;
         let email = document.getElementById("email").value;
         let age = document.getElementById("age").value;
         let status = document.getElementById("status").value;
-        userTable.innerText =`${userName} y status ${status}`;
+        userTable.innerHTML +=`<tr> <td>${userName}</td> <td>${email}</td> <td>${age}</td> <td>${status}</td> <td><button>Actualizar</button></td> <td><button>Eliminar</button></td> </tr>  `;
+        console.log(userTable.[0]);
     }
 
-    userForm.addEventListener('submit', createUsers);
+    userForm.addEventListener('submit', createUser);
 
 }
 
